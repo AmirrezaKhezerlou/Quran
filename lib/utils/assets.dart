@@ -10,4 +10,5 @@ class StaticAssets {
   static const String ui = 'assets/intro/ui.png';
   static const String easyNav = 'assets/intro/easyNav.png';
   static const String drawer3d = 'assets/intro/drawer3d.gif';
+  static const String QuranIcon = 'assets/intro/quran.png';
 }

@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:al_quran/screens/audio_play/sura_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -26,6 +29,7 @@ import 'package:al_quran/screens/surah/surah_index_screen.dart';
 import 'configs/core_theme.dart' as theme;
 
 Future<void> main() async {
+  HttpOverrides.global = MyHttpOverrides();
   setPathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -104,6 +108,7 @@ class MaterialChild extends StatelessWidget {
         AppRoutes.juz: (context) => const JuzIndexScreen(),
         AppRoutes.helpGuide: (context) => const HelpGuide(),
         AppRoutes.splash: (context) => const SplashScreen(),
+         AppRoutes.audio: (context) => const sura_list(),
         AppRoutes.surah: (context) => const SurahIndexScreen(),
         AppRoutes.shareApp: (context) => const ShareAppScreen(),
         AppRoutes.bookmarks: (context) => const BookmarksScreen(),
@@ -112,5 +117,12 @@ class MaterialChild extends StatelessWidget {
             HomeScreen(maxSlide: MediaQuery.of(context).size.width * 0.835),
       },
     );
+  }
+}
+class MyHttpOverrides extends HttpOverrides{
+  @override
+  HttpClient createHttpClient(SecurityContext? context){
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (X509Certificate cert, String host, int port)=> true;
   }
 }

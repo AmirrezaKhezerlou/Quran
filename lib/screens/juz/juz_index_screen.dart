@@ -112,6 +112,7 @@ class _JuzIndexScreenState extends State<JuzIndexScreen> {
                           MaterialPageRoute(
                             builder: (_) => PageScreen(
                               juz: juzCubit.state.data,
+                              Url: '',
                             ),
                           ),
                         );

@@ -7,6 +7,7 @@ class AppRoutes {
   static const splash = 'splash';
   static const helpGuide = 'helpGuide';
   static const surah = 'surah';
+  static const audio = 'audio';
   static const bookmarks = 'bookmarks';
   static const juz = 'juz';
   static const onboarding = 'onboarding';

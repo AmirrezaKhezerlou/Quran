@@ -40,8 +40,8 @@ class ShareInfo extends StatelessWidget {
     final RenderBox box = context.findRenderObject() as RenderBox;
 
     Share.share(
-        "Download the latest no-Ads Holy Qur'an App on Play store\n\n"
-        "https://play.google.com/store/apps/details?id=com.hmz.al_quran \n\nShare More! It is Sadaq-e-Jaria :)",
+        "آخرین نسخه اپلیکیشن قرآن کریم را از لینک زیر دانلود کنید : \n\n"
+        "https://google.com \n\nلطفا لینک دانلود را با دوستان خود به اشتراک بگذارید.",
         sharePositionOrigin: box.localToGlobal(Offset.zero) & box.size);
   }
 
@@ -71,14 +71,9 @@ class ShareInfo extends StatelessWidget {
             iconData: ShareIcon.github,
             text: 'لینک گیت هاب',
             onPressed: () =>
-                launch("https://github.com/mhmzdev/The_Holy_Quran_App"),
+                launch("https://github.com/"),
           ),
-          _ShareCustomButton(
-            iconData: ShareIcon.googlePlay,
-            text: 'امتیاز دهی',
-            onPressed: () => launch(
-                "https://play.google.com/store/apps/details?id=com.hmz.al_quran"),
-          ),
+        
           SizedBox(height: height * 0.02),
           const AppVersion()
         ],

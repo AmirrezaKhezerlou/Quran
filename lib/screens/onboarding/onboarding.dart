@@ -26,19 +26,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           "به راستی که ما قرآن را نازل کردیم و همانا ما نگهبان آن خواهیم بود.",
     ),
     const _OnBoardingPage(
-      image: StaticAssets.ui,
+      image: StaticAssets.QuranIcon,
       text:
           "طراحی شده با آخرین و بروزترین سیستم طراحی اپلیکیشن با رابط کاربری جذاب",
     ),
     const _OnBoardingPage(
-      image: StaticAssets.easyNav,
+      image: StaticAssets.QuranIcon,
       text:
           "با قابلیت جستجوی سوره و جز و همچنین قابلیت ذخیره سازی",
     ),
     const _OnBoardingPage(
-      image: StaticAssets.drawer3d,
+      image: StaticAssets.QuranIcon,
       text:
-          "منوی کناری اپلیکیشن به همراه نمایش تمام امکانات و ویژگی های اپلیکیشن",
+        "قابلیت پخش صوتی کل سوره های قرآن کریم با بهترین کیفیت ممکن",
     ),
   ];
 

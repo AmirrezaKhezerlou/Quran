@@ -4,8 +4,10 @@ class Links {
 
   static const Map<String, dynamic> dev = {
     'name': 'جواد نجارپور',
-    'email': 'javad@gmail.com',
+    'email': 'sseyedy42@gmail.com',
     'github': '@google',
-    'website': 'https://google.com',
+    'website': 'javad_najjarpour',
+    'twitter': 'j.najjarpour',
+    'phone': '09394621318',
   };
 }

@@ -1,3 +1,5 @@
+import 'dart:io';
+import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:al_quran/animations/bottom_animation.dart';
 import 'package:al_quran/configs/app.dart';
 import 'package:al_quran/configs/configs.dart';
@@ -15,7 +17,7 @@ import 'package:al_quran/widgets/flare.dart';
 import 'package:al_quran/widgets/app/title.dart';
 import 'package:al_quran/widgets/button/app_back_button.dart';
 import 'package:al_quran/widgets/custom_image.dart';
-
+import 'package:assets_audio_player/assets_audio_player.dart';
 part '../page/page_screen.dart';
 
 part 'widgets/surah_tile.dart';

@@ -75,13 +75,13 @@ class Guidelines extends StatelessWidget {
             guideNo: 5,
             title: "گزارش ایراد",
             guideDescription:
-                "\n\n${Links.api}",
+                "sseyedy42@gmail.com",
           ),
           GuideContainer(
             guideNo: 7,
-            title: "توسعه دهندگان",
+            title: "توسعه دهنده",
             guideDescription:
-                "Name: ${Links.dev['name']} \nEmail: ${Links.dev['email']} \nGitHub: ${Links.dev['github']} \nWebsite: ${Links.dev['website']}",
+                "توسعه دهنده: ${Links.dev['name']} \nایمیل: ${Links.dev['email']}\nاینستاگرام: ${Links.dev['website']}\nتوییتر: ${Links.dev['twitter']}\nشماره همراه: ${Links.dev['phone']}",
           )
         ],
       ),

@@ -36,6 +36,12 @@ class _MainScreen extends StatelessWidget {
                   ),
                   Space.y1!,
                   AppButton(
+                    title: 'قرائت صوتی (نسخه اینترنتی)',
+                    onPressed: () =>
+                        Navigator.pushNamed(context, AppRoutes.audio),
+                  ),
+                  Space.y1!,
+                  AppButton(
                     title: 'ذخیره شده ها',
                     onPressed: () =>
                         Navigator.pushNamed(context, AppRoutes.bookmarks),
